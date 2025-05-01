@@ -41,6 +41,7 @@
                       <th>ID</th>
                       <th>User Name</th>
                       <th>Users Email</th>
+                      <th>Roles</th>
                       <th>Action</th>
                   </tr>
               </thead>
@@ -50,6 +51,7 @@
                         <td>{{ $user->id }}</td>
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}<td>
+
                         <td class="project-actions">
                             <a class="btn btn-primary btn-sm" href="{{ route('users.show',$user->id) }}"><i class="fas fa-folder"></i>View</a>
                             <a class="btn btn-info btn-sm" href="{{ route('users.edit', $user->id) }}"><i class="fas fa-pencil-alt"></i>Edit</a>
